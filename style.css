@@ -53,6 +53,13 @@ body{
 
 }
 
+/* Add styling for controls outside the media query */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
 .controls i{
     padding: 25px 0;
     text-align: center;
@@ -62,6 +69,11 @@ body{
     cursor: pointer;
     border-right: 1px solid #171b26;
 }
+
+.controls i:last-child {
+    border-right: none; /* Remove border from the last button */
+}
+
 
 @media screen and (max-width: 800px){
     .wrapper{
